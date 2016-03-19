@@ -27,7 +27,7 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
    ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-184948.png)
    
 
-**Userful Acticles and websites refered**
+**Userful Articles and websites referred**
  
  1. [http://square.github.io/retrofit/](http://square.github.io/retrofit/)
  2. [http://inthecheesefactory.com/blog/retrofit-2.0/en](http://inthecheesefactory.com/blog/retrofit-2.0/en)
