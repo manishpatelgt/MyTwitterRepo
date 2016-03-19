@@ -23,6 +23,6 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
    
 4. **MyReTweets**
 
-   ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-185025.png)
+   ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-184948.png)
    
 
