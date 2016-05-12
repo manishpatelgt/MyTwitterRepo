@@ -20,7 +20,7 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 
     ![Screen3](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen3.png)
   
-   
+
 4. **MyReTweets**
 
    ![Screen4](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen4.png)
@@ -28,6 +28,7 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 5. **Profile**
 
    ![Screen5](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen5.png)
+   
    
 6. **AboutUs**
 
