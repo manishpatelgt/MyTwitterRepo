@@ -56,7 +56,7 @@ This application is only for learning purpose. How to use **Twitter API** ? So i
  7. [https://docs.fabric.io/android/index.html](https://docs.fabric.io/android/index.html)
  
  
- **Licence**
+**Licence**
  
  ```
  Copyright (C) 2016 Manish Patel (MD)
