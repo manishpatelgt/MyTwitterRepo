@@ -9,22 +9,29 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 
 1. **Login**
 
-   ![Screen1](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-185025.png)
+   ![Screen1](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen1.png)
 
 2. **HomeTimeLine**
 
-   ![Screen12](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-184849.png)
+   ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen2.png)
    
-   ![Screen12](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-184910.png)
    
 3. **MyTweets**
 
-   ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-185007.png)
-   
+    ![Screen3](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen3.png)
+  
    
 4. **MyReTweets**
 
-   ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/device-2016-03-19-184948.png)
+   ![Screen4](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen4.png)
+   
+5. **Profile**
+
+   ![Screen5](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen5.png)
+   
+6. **AboutUs**
+
+   ![Screen6](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen6.png)
    
 
 **Userful Articles and websites referred**
@@ -39,3 +46,8 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 
  1. [https://dev.twitter.com/overview/api/tweets](https://dev.twitter.com/overview/api/tweets) 
  2. [https://dev.twitter.com/rest/reference/get/statuses/user_timeline](https://dev.twitter.com/rest/reference/get/statuses/user_timeline)
+ 3. [https://docs.fabric.io/android/twitter/access-rest-api.html](https://docs.fabric.io/android/twitter/access-rest-api.html)
+ 4. [https://dev.twitter.com/overview/api/response-codes](https://dev.twitter.com/overview/api/response-codes)
+ 5. [https://dev.twitter.com/oauth/overview](https://dev.twitter.com/oauth/overview)
+ 6. [https://dev.twitter.com/oauth/overview/creating-signatures](https://dev.twitter.com/oauth/overview/creating-signatures)
+ 7. [https://docs.fabric.io/android/index.html](https://docs.fabric.io/android/index.html)
