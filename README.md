@@ -33,6 +33,9 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 
    ![Screen6](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen6.png)
    
+   
+This application is only for learning purpose. How to use **Twitter API** ? So if you have any suggetion please don't hasitate just give me feedback email.
+
 
 **Userful Articles and websites referred**
  
@@ -51,3 +54,23 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
  5. [https://dev.twitter.com/oauth/overview](https://dev.twitter.com/oauth/overview)
  6. [https://dev.twitter.com/oauth/overview/creating-signatures](https://dev.twitter.com/oauth/overview/creating-signatures)
  7. [https://docs.fabric.io/android/index.html](https://docs.fabric.io/android/index.html)
+ 
+ 
+ **Licence**
+ 
+ ```
+ Copyright (C) 2016 Manish Patel (MD)
+ 
+ Unauthorised usage or distribution strictly prohibited.
+ You may not use this file except in compliance with the License.
+ Portions copyright 2012, Google, Inc.
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ 
+ ```
+ 
+ 
