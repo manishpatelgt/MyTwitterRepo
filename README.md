@@ -1,6 +1,8 @@
 # MyTwitterRepo
 
-Android Twitter implementation by using [Fabric SDK](https://docs.fabric.io/android/index.html) and  [Retrofit 2.0](http://square.github.io/retrofit/) 
+Android Twitter implementation by using [Fabric SDK](https://docs.fabric.io/android/index.html) and  [Retrofit 2.0](http://square.github.io/retrofit/)
+
+Also describe how to customize Retrofit 1.9 implementation provided by Fabric Twitter SDK Kit.
 
 This will get all the data from [Twitter](http://twitter.com/) by using [Twitter Rest API](https://dev.twitter.com/rest/public)
 
