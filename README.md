@@ -1,4 +1,5 @@
 # MyTwitterRepo
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 Android Twitter implementation by using [Fabric SDK](https://docs.fabric.io/android/index.html) and  [Retrofit 2.0](http://square.github.io/retrofit/)
 
@@ -15,26 +16,26 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 
 2. **HomeTimeLine**
 
-   ![Screen2](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen2.png)
+    <img src="https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen2.png" width="400" height="650">
    
    
 3. **MyTweets**
 
-    ![Screen3](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen3.png)
+   <img src="https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen3.png" width="400" height="650">
   
 
 4. **MyReTweets**
 
-   ![Screen4](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen4.png)
+ <img src="https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen4.png" width="400" height="650">
    
 5. **Profile**
 
-   ![Screen5](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen5.png)
+  <img src="https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen5.png" width="400" height="650">
    
    
 6. **AboutUs**
 
-   ![Screen6](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen6.png)
+  <img src="https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen6.png" width="400" height="650">
    
    
 This application is only for learning purpose. How to use **Twitter API** ? So if you have any suggetion please don't hasitate just give me feedback email.
