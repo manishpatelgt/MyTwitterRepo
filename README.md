@@ -11,7 +11,7 @@ This will get all the data from [Twitter](http://twitter.com/) by using [Twitter
 
 1. **Login**
 
-   ![Screen1](https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen1.png)
+   <img src="https://github.com/manishpatelgt/MyTwitterRepo/blob/master/MyTwitter/Screen1.png" width="400" height="500">
 
 2. **HomeTimeLine**
 
