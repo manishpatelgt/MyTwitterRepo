@@ -1,0 +1,150 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.mytwitter"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.2"
+
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+
+
+    dexOptions {
+        // Prevent OutOfMemory with MultiDex during the build phase
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    splits {
+        density {
+            enable false
+            exclude "ldpi", "tvdpi"
+            compatibleScreens 'normal', 'large', 'xlarge', 'xxlarge'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../mytwitter.keystore')
+            storePassword 'mytwitter'
+            keyAlias 'mytwitter'
+            keyPassword 'mytwitter'
+        }
+        release {
+            storeFile file('../mytwitter.keystore')
+            storePassword 'mytwitter'
+            keyAlias 'mytwitter'
+            keyPassword 'mytwitter'
+        }
+    }
+
+    // https://stackoverflow.com/questions/20673888/duplicate-files-copied-android-studio-0-4-0
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/maven'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.0'
+    compile "com.android.support:appcompat-v7:${android_support_lib_version}"
+    compile "com.android.support:design:${android_support_lib_version}"
+    compile "com.android.support:cardview-v7:${android_support_lib_version}"
+    compile "com.android.support:palette-v7:${android_support_lib_version}"
+    compile ('com.squareup.retrofit2:retrofit:2.0.0') {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    compile 'com.mostafagazar:customshapeimageview:1.0.4'
+    compile 'com.google.code.gson:gson:2.6.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile "com.google.android.gms:play-services-analytics:${google_play_services_client_library_version}"
+    compile "com.google.android.gms:play-services-auth:${google_play_services_client_library_version}"
+    compile "com.google.android.gms:play-services:${google_play_services_client_library_version}"
+    compile('com.twitter.sdk.android:twitter:1.13.0@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+}
+
+/**
+ * Strip unused packages on Google Play Services library (https://gist.github.com/dmarcato/d7c91b94214acd936e42)
+ */
+afterEvaluate { project ->
+    android.applicationVariants.each { variant ->
+        variant.javaCompile.dependsOn stripPlayServices
+    }
+}
+
+task stripPlayServices << {
+    def playServiceRootFolder = new File(rootProject.buildDir, "intermediates/exploded-aar/com.google.android.gms/play-services/")
+    playServiceRootFolder.list().each { versionName ->
+        def versionFolder = new File(playServiceRootFolder, versionName)
+        copy {
+            from(file(new File(versionFolder, "classes.jar")))
+            into(file(versionFolder))
+            rename { fileName ->
+                fileName = "classes_orig.jar"
+            }
+        }
+        tasks.create(name: "strip" + versionName, type: Jar) {
+            destinationDir = versionFolder
+            archiveName = "classes.jar"
+            from(zipTree(new File(versionFolder, "classes_orig.jar"))) {
+                exclude "com/google/ads/**"
+                exclude "com/google/android/gms/games/**"
+                exclude "com/google/android/gms/panorama/**"
+                exclude "com/google/android/gms/plus/**"
+                exclude "com/google/android/gms/drive/**"
+                exclude "com/google/android/gms/ads/**"
+                exclude "com/google/android/gms/wallet/**"
+                exclude "com/google/android/gms/wearable/**"
+            }
+        }.execute()
+        delete {
+            delete(file(new File(versionFolder, "classes_orig.jar")))
+        }
+    }
+}
+
+

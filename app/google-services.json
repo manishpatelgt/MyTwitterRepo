@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "121457119320",
+    "project_id": "myowntwitter-bbfe7"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121457119320:android:60b7a0a61d41824d",
+        "android_client_info": {
+          "package_name": "com.mytwitter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZL1eY0iOaAyL3yTsL1CcoFkKTTsjLteQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-77225831-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
